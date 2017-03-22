@@ -1,3 +1,20 @@
+
+
+
+
+
+def braces(lst):
+    a = []
+    for i in lst:
+        if isValid(i):
+            a.append('YES')
+        else:
+            a.append('NO')
+
+    return a
+
+
+
 def isValid(s):
     """
     :type s: str
@@ -22,3 +39,6 @@ def isValid(s):
 
 print isValid('{()}')
 print isValid('{[}')
+
+
+print braces(['{()}','{[}'])
